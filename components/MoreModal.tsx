@@ -34,11 +34,11 @@ export default function MoreModal({ isOpen, onClose, tour, onBook }: Props) {
 
         // bullets（以 - 开头）
         hl = after
-          .split("\n")
-          .map((l) => l.trim())
-          .filter(Boolean)
-          .filter((l) => l.startsWith("-"))
-          .map((l) => l.replace(/^-+\s*/, "").trim());
+            .split("\n")
+            .map((line: string) => line.trim())  
+            .filter(Boolean)
+            .filter((line: string) => line.startsWith("-"))  
+            .map((line: string) => line.replace(/^-+\s*/, "").trim()); 
 
         // after 中可能还有非 bullets 的段落，取出它们
         const afterParas = after
@@ -55,15 +55,15 @@ export default function MoreModal({ isOpen, onClose, tour, onBook }: Props) {
       } else {
         paras = raw
           .split("\n\n")
-          .map((p) => p.trim())
+          .map((para: string) => para.trim())
           .filter(Boolean);
 
         hl = raw
           .split("\n")
-          .map((l) => l.trim())
+          .map((line: string) => line.trim())
           .filter(Boolean)
-          .filter((l) => l.startsWith("-"))
-          .map((l) => l.replace(/^-+\s*/, "").trim());
+          .filter((line: string) => l.startsWith("-"))
+          .map((line: string) => line.replace(/^-+\s*/, "").trim());
       }
 
       // 若有显式 imageCaption 则使用，否则取首段作为短 caption（<=160 字符），并从段落中移除
