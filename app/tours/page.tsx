@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TourCard from "@/components/TourCard";
 import BookingModal from "@/components/BookingModal";
-import MoreModal from "@/components/MoreModal"; // 新增
+import MoreModal from "@/components/MoreModal"; 
 import PageHeader from "@/components/PageHeader"; // New Component
 import { tours } from "@/data/tours";
 
@@ -48,9 +48,9 @@ export default function ToursPage() {
         isOpen={!!selectedMoreTour}
         tour={selectedMoreTour}
         onClose={() => setSelectedMoreTour(null)}
-        onBook={(t) => {
+        onBook={(tour: any) => {
           setSelectedMoreTour(null);
-          setSelectedTour(t.title);
+          setSelectedTour(tour.title);
         }}
       />
     </main>
