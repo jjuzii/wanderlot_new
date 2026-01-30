@@ -43,13 +43,13 @@ export default function MoreModal({ isOpen, onClose, tour, onBook }: Props) {
         // after 中可能还有非 bullets 的段落，取出它们
         const afterParas = after
           .split("\n\n")
-          .map((p) => p.trim())
+          .map((para: string) => para.trim())
           .filter(Boolean)
-          .filter((p) => !p.split("\n").every((line) => line.trim().startsWith("-")));
+          .filter((para: string) => !para.split("\n").every((line) => line.trim().startsWith("-")));
 
         paras = before
           .split("\n\n")
-          .map((p) => p.trim())
+          .map((para: string) => para.trim())
           .filter(Boolean);
         paras.push(...afterParas);
       } else {
@@ -62,7 +62,7 @@ export default function MoreModal({ isOpen, onClose, tour, onBook }: Props) {
           .split("\n")
           .map((line: string) => line.trim())
           .filter(Boolean)
-          .filter((line: string) => l.startsWith("-"))
+          .filter((line: string) => line.startsWith("-"))
           .map((line: string) => line.replace(/^-+\s*/, "").trim());
       }
 
