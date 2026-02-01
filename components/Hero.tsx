@@ -27,7 +27,7 @@ export default function Hero() {
         >
           Discover Shanghai,
           <br />
-          <span className="text-amber-400">The Student Way</span>
+          <span className="text-amber-400">The Local Way</span>
         </motion.h1>
         
         <motion.p 

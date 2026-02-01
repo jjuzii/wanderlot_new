@@ -19,7 +19,7 @@ export default function ToursPage() {
       
       <PageHeader 
         title="Explore Shanghai" 
-        subtitle="Jotouch .gitignorein our free student-led tours and discover the city's hidden gems." 
+        subtitle="Join us in our free student-led tours and discover the city's hidden gems." 
       />
 
       {/* Grid */}

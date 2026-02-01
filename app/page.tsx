@@ -31,7 +31,7 @@ export default function Home() {
                  <div className="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
                      <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-600 transition-colors">
                         <Wallet className="w-8 h-8 text-amber-600 group-hover:text-white" />
-                     </div>
+                     </div>Shanghai is a strong cocktail of cultures.
                      <h3 className="text-2xl font-bold mb-4 text-gray-900">Completely Free</h3>
                      <p className="text-gray-600 leading-relaxed">
                        We believe culture should be accessible to everyone. Our tours are free of charge (tips are appreciated but never expected).
@@ -56,9 +56,9 @@ export default function Home() {
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
             <blockquote className="text-3xl md:text-4xl font-serif italic leading-normal">
-                "Shanghai is a city that never sleeps, but it's also a city that dreams."
+                "Shanghai is a strong cocktail of cultures.""
             </blockquote>
-            <cite className="block mt-6 text-amber-500 font-semibold not-italic">- A Student's Perspective</cite>
+            <cite className="block mt-6 text-lg text-amber-500 font-semibold not-italic">- Where the past meets future, and every street tells a story</cite>
         </div>
       </section>
 
